@@ -1,13 +1,91 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
-
-h1 {
-  font-size: 2.2rem;
-  color: lighten($orange, 25);
+/*
+For help getting fixed nav bar
+https://www.youtube.com/watch?v=_ovlvYH782c
+http://sixrevisions.com/css/fixed-navigation-bar/
+*/
+/* Color variables
+$orange         : #BD3613;
+$blue           : #2176C7;
+$green 			: #009180;
+$black 			: #000000;
+$idk			: #18bc9c;
+*/
+nav{
+	.nav-bar  {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 40px;
+		width: 100%;
+		background: $green;
+  		font-size: 1.2rem;
+  		color: $black;
+    	ul {
+			margin: 0;
+			padding: 0;
+		
+		
+		}
+		li{
+			text-decoration: none;	
+			float: right;	
+		}
+		a {
+			float: left;
+			//HALP HERE
+			text-decoration: none;
+			display: block;
+			padding: 10px 20px;
+			&:link{
+				color: $black;
+			}
+			&:visited{
+				color: $black;
+			}
+			&:hover {
+				color: $idk;
+			}
+		}
+	}
 }
 
-.test {
-  font-size: 1.2rem;
-  color: $blue;
+header{
+	background-color: $orange;
+	h1{
+		font-size: 5rem;
+		font-family: $font-name;
+		display: block;
+		margin: 0 auto;
+	}
+	.content {
+		.profile-picture {
+			display: block;
+			margin: 0 auto;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border-color: $black;
+		}
+	}
 }
+.section1{
+	height: 200px;
+	background-color: $idk;
+
+}
+.section2{
+	height: 200px;
+	background-color: $green;
+}
+.section3{
+	height: 200px;
+	background-color: $orange;
+}
+.section4{
+	height: 200px;
+	background-color: $blue;
+}
+
+
