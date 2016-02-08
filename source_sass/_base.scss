@@ -17,16 +17,17 @@ nav{
 		position: fixed;
 		top: 0;
 		left: 0;
-		height: 40px;
+		height: $navbar-height;
 		width: 100%;
 		background: $green;
   		font-size: 1.2rem;
   		color: $black;
+  		.shrink{
+  			height: 10px;
+  		}
     	ul {
 			margin: 0;
 			padding: 0;
-		
-		
 		}
 		li{
 			text-decoration: none;	
@@ -34,7 +35,7 @@ nav{
 		}
 		a {
 			float: left;
-			//HALP HERE
+			font-weight: bold;
 			text-decoration: none;
 			display: block;
 			padding: 10px 20px;
@@ -50,9 +51,19 @@ nav{
 		}
 	}
 }
+nav.shrink .nav-bar{
+	height: $navbar-height/2;
+	font-size: .8rem;
+}
 
 header{
-	background-color: $orange;
+	//For how to fit background image in div
+	// http://stackoverflow.com/questions/8200204/fit-background-image-to-div
+	//background-color: $orange;
+	height: 400px;
+	background-image: url('../media/ski-view.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 	h1{
 		font-size: 5rem;
 		font-family: $font-name;
@@ -69,23 +80,59 @@ header{
 			border-color: $black;
 		}
 	}
+
+	span{
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2em;
+
+	}
+}
+footer{
+	.connect{
+		 color: $black;
+    	ul {
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			text-decoration: none;	
+			float: right;	
+		}
+	    a {
+			float: left;
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+			padding: 10px 20px;
+		}
+	}
+}
+.container{
+	width: 100%;
+	padding-top: $navbar-height;
 }
 .section1{
-	height: 200px;
+	height: 400px;
 	background-color: $idk;
 
 }
 .section2{
-	height: 200px;
+	height: 400px;
 	background-color: $green;
 }
 .section3{
-	height: 200px;
+	height: 400px;
 	background-color: $orange;
 }
 .section4{
-	height: 200px;
+	height: 400px;
 	background-color: $blue;
+}
+.section5{
+	height: 400px;
+	background-color: $green;
 }
 
 
