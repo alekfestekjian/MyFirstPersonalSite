@@ -4,109 +4,105 @@
   <meta charset="UTF-8">
   <title>Alek Festekjian</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/mystyles.css">
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> -->
+  <link rel="icon" type="image/ico" href="./media/favicon.ico">
   <!-- Testing out this font -->
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700italic' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
+
 <body>
     <nav>
       <div class="nav-bar"> <!--good practice?-->
-        <a href="#" class="Name">Alek Festekjian</a>
+        <a href="#profile" class="Name">Alek Festekjian</a>
         <ul class="sections">
-          <li class="scrollmove"><a href="#Contact">Contact</a></li>
-          <li class="scrollmove"><a href="#Projects">Experience</a></li>
-          <li class="scrollmove"><a href="#FavoriteBooks">Books</li>
-          <li class="scrollmove"><a href="#Education">Education</a></li>
-          <li class="scrollmove"><a href="#AboutMe">About me</a></li>
+          <div id ="center">
+            <li class="scrollmove"><a href="#MotivationalVideo">Motivational Video</a></li>
+            <li class="scrollmove"><a href="#FavoriteBooks">Books</a></li>
+            <li class="scrollmove"><a href="#Experience">Experience</a></li>
+            <li class="scrollmove"><a href="#Education">Education</a></li>
+            <li class="scrollmove"><a href="#AboutMe">About me</a></li> 
+          </div>
         </ul>
       </div>
     </nav>
 
     <!-- HEADER & PICTURE -->
-    <div class="container">
-      <header>
-        <div class="content">
+    <div id ="profile" class="container">
+      <header id="profie">
+        <div  class="content">
           <img src="./media/tiger-pro.jpg" class="profile-picture">
           <!-- bad practice? -->
           <h1 align="center" class="name">Alek Festekjian</h1> 
-          <hr>
-          <span class="description">Student - Computer Scientist - Powerlifter</span>
+          <span class="description">Student - Computer Scientist - Skier</span>
         </div>
 
       </header>
       <!-- About ME SECTION -->
       <!-- Rename -->
-      <section id = "AboutMe" class = "section1">
+      <section id = "AboutMe" class = "AboutMe">
         <div class="text-content">
-          <h1>Hi! My name is Alek Festekjian and I am currently a junior Computer Science student at University of Illinois.  </h1>
-
+          <h1>About Me</h1>
+          <p> My name is Alek Festekjian and I am currently a Junior in Computer Science at the University of Illinois Urbana-Champaign. Check out my <a href="Resume.pdf">Resume!</a></p> 
         </div>
-
+        <br>
+        <div class="text-content">
+          <h1>Programming Languages</h1>
+          <p><strong>Proficient</strong> in C, C++, Java, Kafka</p>
+          <p><strong>Experience</strong> with Python, R, Javascript, jQuery, Git, HTML5/CSS,MIPS</p>
+        </div>
+        <br>
+        <div class="text-content">
+          <h1>Hobbies</h1>
+          <p>When I am not coding or studying I love to a variety of activities. I read tons of books, I go rock climbing, I love working out and playing sports such as Skiing, Basketball, Soccer and Football!</p> 
+        </div>
       </section>
 
-      <section id = "Education" class = "section2">
+      <section id = "Education" class = "Education">
         <div class="text-content">
           <h1>Undergraduate</h1>
-
         </div>
-
       </section>
-  
-      <section id = "FavoriteBooks" class = "section3">
+
+      <section id = "Experience" class = "Experience">
+        <div class="carousel">
+          
+        </div>
+      </section>
+
+      <section id = "FavoriteBooks" class = "Books">
         <div class="text-content">
           <h1>Here are my favorite books!</h1>
           <h3>Mastery</h3>
           <h3>SuperForcasters</h3>
           <h3>Thinking Fast and Slow</h3>
         </div>
-
       </section>
 
-      <section id = "Experience" class = "section4">
+      <section id = "MotivationalVideo" class = "video">
         <div class="text-content">
-          <h1>Here's where I've worked!</h1>
-
+            <video poster="./media/money.png"width="100%" height="100%" controls>
+              <source src="./media/noObject.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
         </div>
-
       </section>
-
-      <section id = "Contact" class = "section5">
-        <div class="text-content">
-          <h1>If you want to chat!</h1>
-  
+      <footer class="multi-column-footer">
+        <div class="connect" id="connect">
+            <h1>Connect with me!</h1>
+            <a href="https://github.com/alekfestekjian" target="_blank"><img src="./media/GitHub.svg" width="40" height="40"></a>
+            <a href="https://www.facebook.com/alek.festekjian" target="_blank"><img src="./media/facebook.svg" width="40" height="40"></a>
+            <a href="https://twitter.com/afestekjian" target="_blank"><img src="./media/twitter.svg" width="40" height="40"></a>
+            <a href="https://www.linkedin.com/in/festekjian" target="_blank"><img src="./media/linkedin.svg" width="40" height="40"></a>
+            <a href=mailto:festekj2@illinois.edu target="_blank"><img src="./media/gmail.svg" width="40" height="40"></a>
         </div>
+      </footer>
 
-      </section>
+   
     </div>
-    <footer class="multi-column-footer">
-        <div id="Location">
-          <h1>Location</h1>
-          <h2>1003 W Main St.</h2>
-          <h2>Urbana,IL 61801</h2>
-        </div>
-        <div class="connect" id="Connect">
-          <h1>Connect with me!</h1>
-            <ul class="social-media">
-              <li class="social"><a href="https://github.com/alekfestekjian" target="_blank"><img src="./media/GitHub.png"></a></li>
-              <li class="social"><a href="https://www.facebook.com/alek.festekjian" target="_blank"><img src="./media/facebook.png"></li>
-              <li class="social"><a href="https://twitter.com/afestekjian" target="_blank"><img src="./media/twitter.png"></a></li>
-              <li class="social"><a href="https://www.linkedin.com/in/festekjian" target="_blank"><img src="./media/linkedin.png"></a></li>
-            </ul>
-        </div>
-        <div id="Alek Festekjian"></div>
-        <h1>Contact me at festekj2@illinois.edu</h1>
-        <h3>Add social media links</h3>
-    </footer>
+
+   
     
-
-
-
- <!--  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
-  <div class="cat">
-    <img src="./media/cat.jpg" alt="Cat">
-  </div> -->
 
   <script src="lib/jquery-2.1.3.min/index.js"></script>
   <script src="js/script.js"></script>

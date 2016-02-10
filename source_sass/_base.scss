@@ -13,27 +13,35 @@ $black 			: #000000;
 $idk			: #18bc9c;
 */
 nav{
+	
 	.nav-bar  {
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: $navbar-height;
-		width: 100%;
-		background: $green;
-  		font-size: 1.2rem;
-  		color: $black;
-  		.shrink{
-  			height: 10px;
-  		}
+		display: table;
+  	//vertical-align: middle;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $navbar-height;
+	width: 100%;
+	background: $green;
+  	font-size: 1.2rem;
+  	color: $black;
     	ul {
+
 			margin: 0;
 			padding: 0;
 		}
 		li{
+			float: right;
 			text-decoration: none;	
-			float: right;	
 		}
 		a {
+			/**
+			Vertically centered text hack PLS FIX
+			*/
+			display: table-cell;
+     		vertical-align: middle;
+			line-height: 40px; 
+
 			float: left;
 			font-weight: bold;
 			text-decoration: none;
@@ -46,22 +54,35 @@ nav{
 				color: $black;
 			}
 			&:hover {
-				color: $idk;
+				background-color: $blue;
+				color: #FFFFFF;
 			}
 		}
 	}
 }
+
 nav.shrink .nav-bar{
-	height: $navbar-height/2;
-	font-size: .8rem;
+	display: table;
+	height: $navbar-shrink;
+	
+	font-size: 1.2rem;
+	a{
+		//display: table-cell;
+		display:inline;
+  		vertical-align:middle;
+  		line-height: 20px; 
+  		// PLS HELP WITH THE SUPER JANKINESS
+	}
 }
 
 header{
+	
 	//For how to fit background image in div
 	// http://stackoverflow.com/questions/8200204/fit-background-image-to-div
 	//background-color: $orange;
 	height: 400px;
 	background-image: url('../media/ski-view.jpg');
+	background-color: rgba(100,100,100,.7);
 	background-size: cover;
 	background-attachment: fixed;
 	h1{
@@ -90,49 +111,74 @@ header{
 	}
 }
 footer{
+	// Use mixin
+	background-color: $gray;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 	.connect{
-		 color: $black;
-    	ul {
-			margin: 0;
-			padding: 0;
-		}
-		li{
-			text-decoration: none;	
-			float: right;	
-		}
+		color: $black;
+
 	    a {
-			float: left;
-			font-weight: bold;
+	    	display: inline-block;
 			text-decoration: none;
-			display: block;
-			padding: 10px 20px;
+			// display: block;
+			// text-align: center;
+			// float: left;
+			padding: 10px 5px;
 		}
 	}
+	h1{
+		font-weight: bold;
+	}
+
 }
+
+
+
+
 .container{
 	width: 100%;
 	padding-top: $navbar-height;
 }
-.section1{
-	height: 400px;
-	background-color: $idk;
+.AboutMe{
+	/*
+	CHANG TO MIXINS
+	*/
+    @include columns(3);
+	//#height: 400px;
+	width: 100%;
+	background-color: $gray;
+	text-align: center;
+	h1{
+		font-weight: bold;
+	}
+}
+.Education{
+	//#height: 400px;
+	width: 100%;
+
+	background-color: $green;
 
 }
-.section2{
-	height: 400px;
-	background-color: $green;
-}
-.section3{
-	height: 400px;
-	background-color: $orange;
-}
-.section4{
-	height: 400px;
+.Experience{
+	width: 100%;
+	//#height: 400px;
 	background-color: $blue;
-}
-.section5{
-	height: 400px;
-	background-color: $green;
-}
 
+}
+.Books{
+	//#height: 400px;
+	width: 100%;
 
+	background-color: $orange;
+
+}
+.video{
+	h1{
+		font-weight: bold;
+	}
+	width: 100%;
+	text-align: center;
+}
