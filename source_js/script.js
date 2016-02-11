@@ -19,6 +19,7 @@ function highlightThis(event) {
 http://www.bootply.com/109943
 shrinking nav bar
 */
+
 $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
@@ -41,18 +42,3 @@ $(document).scroll(function(){
       });
   });
 });
-
-// $(function() {
-//   $('a[href*="#"]:not([href="#"])').click(function() {
-//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//       var target = $(this.hash);
-//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//       if (target.length) {
-//         $('html, body').animate({
-//           scrollTop: target.offset().top
-//         }, 1000);
-//         return false;
-//       }
-//     }
-//   });
-// });

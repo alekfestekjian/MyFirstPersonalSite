@@ -3,3 +3,8 @@
     -moz-column-count: $numcolumns; /* Firefox */
     	column-count: $numcolumns;
 }
+@mixin fade($scale) {
+  -webkit-column-count: $scale; /* Chrome, Safari, Opera */
+    -moz-column-count: $scale; /* Firefox */
+    	column-count: $scale;
+}
