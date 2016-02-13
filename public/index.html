@@ -19,11 +19,11 @@
         <a href="#profile" class="Name">Alek Festekjian</a>
         <ul class="sections">
           <div id ="center">
-            <li class="scrollmove"><a href="#MotivationalVideo">Motivational Video</a></li>
-            <li class="scrollmove"><a href="#FavoriteBooks">Books</a></li>
-            <li class="scrollmove"><a href="#Experience">Experience</a></li>
-            <li class="scrollmove"><a href="#Education">Education</a></li>
-            <li class="scrollmove"><a href="#AboutMe">About me</a></li> 
+            <li class="scrollmove"><a id = "MotivationalVideo_button" href="#MotivationalVideo">Motivational Video</a></li>
+            <li class="scrollmove"><a id = "FavoriteBooks_button" href="#FavoriteBooks">Books</a></li>
+            <li class="scrollmove"><a id = "Experience_button" href="#Experience">Experience</a></li>
+            <li class="scrollmove"><a id = "Education_button" href="#Education">Education</a></li>
+            <li class="scrollmove"><a id = "AboutMe_button" href="#AboutMe">About me</a></li> 
           </div>
         </ul>
       </div>
@@ -31,7 +31,7 @@
 
     <!-- HEADER & PICTURE id ="profile"-->
     <div class="container"> 
-      <header id="profie">
+      <header id="profile" class="profile">
         <div  class="content">
           <img src="./media/tiger-pro.jpg" class="profile-picture">
           <!-- bad practice? -->
@@ -43,6 +43,7 @@
       <!-- About ME SECTION -->
       <!-- Rename -->
       <section id = "AboutMe" class = "AboutMe">
+        <!-- <div class="column"> -->
         <div class="text-content">
           <h1>About Me</h1>
           <p> My name is Alek Festekjian and I am currently a Junior in Computer Science at the University of Illinois Urbana-Champaign. Check out my <a href="Resume.pdf">Resume!</a></p> 
@@ -58,7 +59,9 @@
           <h1>Hobbies</h1>
           <p>When I am not coding or studying I love to a variety of activities. I read tons of books, I go rock climbing, I love working out and playing sports such as Skiing, Basketball, Soccer and Football!</p> 
         </div>
+        <!-- </div> -->
       </section>
+
 
       <section id = "Education" class = "Education">
         <div class="text-content">
@@ -66,33 +69,79 @@
         </div>
       </section>
 
+
+      <!-- /**https://www.christianheilmann.com/2015/04/08/keeping-it-simple-coding-a-carousel/*/ -->
       <section id = "Experience" class = "Experience">
-        <p>Hi</p>
+
+
+<!--         <div class="carousel">
+
+          <div class="active">
+            <p>Systems Programming Teaching Assistant
+              • Conduct weekly office hours to aid students in debugging and understanding machine problems Helping build and maintain an auto grading framework to automatically grade assignments for over 200 students, involves writing unit tests to grade students</p>
+          </div>
+
+          <div class="hidden">
+            <p>SmartCloud Notes Intern
+            • Leveraged Kafka, an open-source message broker, to develop a Proof of Concept distributed queue processing system to improve processing speed and reliability for user provisioning and company directory synchronization for a cloud based messaging system Proof of Concept project led to the creation of a new long-term development project.</p>
+          </div>
+
+          </div class="hidden">
+            <p>Software Product 
+              • Worked collaboratively to create a Proof of Concept for a new product utilizing multiple technologies such as Microsoft SQL, Spring Restful Services, HTML, and JavaScript Proof of Concept resulted in the development of a new project plan to integrate enhancement into the current product structure which is anticipated to improve client satisfaction
+             </p>
+          </div>
+        </div> -->
       </section>
       <!-- MODAL SECTION -->
+<!--       http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ --> 
       <section id = "FavoriteBooks" class = "Books">
-        <div id="overlay">
-          <div>
-            <p><strong>Mastery</strong> explains how to become a leader in any given field by examining the lives and pathways to success of historical masters such as Mozart, Einstein and Darwin, as well as "living masters" which Greene interviewed—including Paul Graham, Freddie Roach, Santiago Calatrava, Temple Grandin, Yoky Matsuoka, V.S. Ramachandran, Teresita Fernandez, Cesar Rodriguez, and Daniel Everett</p>
+        <div class="Top3">
+          <div class = "Links">
+            <a href="#MasteryModal" class="Book1"><img src="./media/mastery.jpg"></a>
+            <br>
+            <a href="#ArmadaModal" class="Book2"><img src="./media/Armada.jpg"></a>
+            <br>
+            <a href="#FastModal" class="Book3"><img src="./media/FastBook.jpg"></a>
           </div>
-        </div>
-        
-    <!--     <div class="text-content">
-          <h1>Here are my favorite books!</h1>
-          <h3>Mastery</h3>
-          <h3>SuperForcasters</h3>
-          <h3>Thinking Fast and Slow</h3>
-        </div> -->
+            <div id="MasteryModal" class="books">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2><strong>Mastery</strong></h2>
+                <p>Robery Greene explains how to become a leader in any given field by examining the lives and pathways to success of historical masters such as Mozart, Einstein and Darwin, as well as "living masters" which Greene interviewed—including Paul Graham, Freddie Roach, Santiago Calatrava, Temple Grandin, Yoky Matsuoka, V.S. Ramachandran, Teresita Fernandez, Cesar Rodriguez, and Daniel Everett</p>
+              </div>
+            </div>
+
+            <div id="ArmadaModal" class="books">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2><strong>Armada</strong></h2>
+                <p>High school student Zack Lightman glances out his classroom window and spots a UFO. The ship he’s staring at is straight out of the video game he plays every night, a hugely popular online flight simulator called Armada, in which gamers protect Earth from alien invaders.</p>
+              </div>
+            </div>
+
+            <div id="FastModal" class="books">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2><strong>Thinking, Fast And Slow </strong></h2>
+                <p>The book's central thesis is a dichotomy between two modes of thought: "System 1" is fast, instinctive and emotional; "System 2" is slower, more deliberative, and more logical. The book delineates cognitive biases associated with each type of thinking, starting with Kahneman's own research on loss aversion. From framing choices to people's tendency to substitute an easy-to-answer question for one that is harder, the book highlights several decades of academic research to suggest that people place too much confidence in human judgment.</p>
+              </div>
+            </div>
+      </div>
+
+
+       
       </section>
 
       <section id = "MotivationalVideo" class = "video">
         <div class="text-content">
             <video poster="./media/money.png"width="100%" height="100%" controls>
               <source src="./media/noObject.mp4" type="video/mp4" >
-                Your browser does not support the video tag.
+                Your browser does not support this video.
             </video>
         </div>
       </section>
+
       <footer class="multi-column-footer">
         <div class="connect" id="connect">
   <!--           <a href="https://github.com/alekfestekjian" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>

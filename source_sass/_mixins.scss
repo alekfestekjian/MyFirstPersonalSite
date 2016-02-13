@@ -8,3 +8,24 @@
     -moz-column-count: $scale; /* Firefox */
     	column-count: $scale;
 }
+@mixin opacity($value){
+	-webkit-transition: opacity $value ease-in;
+	-moz-transition: opacity $value ease-in;
+	transition: opacity $value ease-in;
+}
+@mixin gradient($value1,$value2){
+	background: -moz-linear-gradient($value1,$value2);
+	background: -webkit-linear-gradient($value1,$value2);
+	background: -o-linear-gradient($value1,$value2);
+}
+@mixin radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($dimensions){
+	-webkit-box-shadow: $dimensions;
+	-moz-box-shadow: $dimensions;
+	box-shadow: $dimensions;
+}
