@@ -305,22 +305,13 @@ footer{
 		background: #00d9ff;
 	}	
 }
-
-
-/***********************************
-************************************/
 /*CAROUSEL CSS*/
 .title{
 	text-align: center;
 }
 .carousel {
-  //font-family: $font-primary;
-  //font-size: 14px;
   width: 100%;
   position: relative;
-  //background-color: $gray;
-  //margin: 1em;
-  //box-shadow: 2px 2px 10px #ccc;
   overflow: hidden;
   button{
   	 border: none;
@@ -352,41 +343,6 @@ footer{
 		text-align: center;
   }
 }
-// .content li {
-//   font-family: $font-secondary;
-//   font-size: 20px;
-//   margin: 0;
-//   padding: 0;
-//   width: 100%;
-//   list-style: none;
-//   text-align: center;
-// }
-
-// .content {
-//   margin: 0;
-//   padding: 0;
-// }
-// .content li {
-//   font-family: $font-secondary;
-//   font-size: 20px;
-//   margin: 0;
-//   padding: 0;
-//   width: 100%;
-//   list-style: none;
-//   text-align: center;
-// }
-// .active {
-//   height: 130px;
-
-// }
-// .active li {
-//   position: absolute;
-//   top: 200px;
-// }
-// .active li.current {
-
-//   top: 30px;
-// }
 .active {
   height: 200px;
   li{
@@ -397,9 +353,7 @@ footer{
   	top: 30px;
   }
   .buttons{
-	  //background: $darker-gray;
 	  text-align: center;
-	  //z-index: 10;
 	  position: relative;
   }
   button{
@@ -407,29 +361,12 @@ footer{
   }
 }
 
-
-// .active .buttons {
-//   //background: $darker-gray;
-//   text-align: center;
-//   //z-index: 10;
-//   position: relative;
-// }
-// .carousel button {
-//   border: none;
-//   display: none;
-// }
-// .active button {
-//   display: block;
-// } 
 .prev{
   background-color: $light-blue;
-  // border-top-left-radius: 10px 5px;
-  // border-bottom-left-radius: 10px 5px;
   float: left;
 }
 .next{
   background-color: $light-blue;
-
   float:right;
 }
 .cover{
