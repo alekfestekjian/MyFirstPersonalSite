@@ -29,3 +29,9 @@
 	-moz-box-shadow: $dimensions;
 	box-shadow: $dimensions;
 }
+// @mixin scale($size){
+
+//     -webkit-transform: scale($size); Safari
+//     -moz-box-shadow: scale($size);
+//     transform: scale($size);
+// }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Alek Festekjian</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/ico" href="./media/favicon.ico">
+  <link rel="icon" type="image/ico" href="./media/favicon.ico?">
   <!-- Testing out this font -->
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700italic' rel='stylesheet' type='text/css'>
 <!-- Allowed? -->
@@ -72,27 +72,45 @@
 
       <!-- /**https://www.christianheilmann.com/2015/04/08/keeping-it-simple-coding-a-carousel/*/ -->
       <section id = "Experience" class = "Experience">
-
-
-<!--         <div class="carousel">
-
-          <div class="active">
-            <p>Systems Programming Teaching Assistant
-              • Conduct weekly office hours to aid students in debugging and understanding machine problems Helping build and maintain an auto grading framework to automatically grade assignments for over 200 students, involves writing unit tests to grade students</p>
+        <div class="title">
+          <h1>Here are some of the places I've worked!</h1>
+        </div>
+        <div class="carousel active">
+          <div class="buttons">
+            <button class="prev">
+             <i class="fa fa-arrow-left"></i>
+            </button>
+            <button class="next">
+              <i class="fa fa-arrow-right"></i>
+            </button>
           </div>
+          <ol class="content">
+            <li>
+              <h1>University of Illinois</h1>
+              <h2>Systems Programming TA</h2>
+              <p>Conduct weekly office hours to aid students in debugging and understanding machine problems</p>
+              <p> Helping build and maintain an auto grading framework to automatically grade assignments for over 200 students, involves writing unit tests to grade students</p>
+            </li>
+            <li>
+              <h1>IBM</h1>
+              <h2>SmartCloud Notes Intern</h2>
+               <p>Leveraged Kafka, an open-source message broker, to develop a Proof of Concept distributed queue processing system to improve processing speed and reliability for user provisioning and company directory synchronization for a cloud based messaging system</p>
+              <p>Proof of Concept project led to the creation of a new long-term development project.</p>
+            </li>
+              
+            <li>
+              <h1>Wolters Kluwer Financial Services</h1>
+              <h2>Software Product Intern</h2> 
+              <p>Worked collaboratively to create a Proof of Concept for a new product utilizing multiple technologies such as Microsoft SQL, Spring Restful Services, HTML, and JavaScript</p>
+              <p>Proof of Concept resulted in the development of a new project plan to integrate enhancement into the current product structure which is anticipated to improve client satisfaction</p>
 
-          <div class="hidden">
-            <p>SmartCloud Notes Intern
-            • Leveraged Kafka, an open-source message broker, to develop a Proof of Concept distributed queue processing system to improve processing speed and reliability for user provisioning and company directory synchronization for a cloud based messaging system Proof of Concept project led to the creation of a new long-term development project.</p>
-          </div>
-
-          </div class="hidden">
-            <p>Software Product 
-              • Worked collaboratively to create a Proof of Concept for a new product utilizing multiple technologies such as Microsoft SQL, Spring Restful Services, HTML, and JavaScript Proof of Concept resulted in the development of a new project plan to integrate enhancement into the current product structure which is anticipated to improve client satisfaction
-             </p>
-          </div>
-        </div> -->
+              </p>
+            </li>
+          </ol>
+        </div>
       </section>
+
+
       <!-- MODAL SECTION -->
 <!--       http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ --> 
       <section id = "FavoriteBooks" class = "Books">
@@ -136,7 +154,7 @@
       <section id = "MotivationalVideo" class = "video">
         <div class="text-content">
             <video poster="./media/money.png"width="100%" height="100%" controls>
-              <source src="./media/noObject.mp4" type="video/mp4" >
+              <source src="./media/noObject.mp4" type="video/mp4" class="cover" >
                 Your browser does not support this video.
             </video>
         </div>
@@ -144,17 +162,10 @@
 
       <footer class="multi-column-footer">
         <div class="connect" id="connect">
-  <!--           <a href="https://github.com/alekfestekjian" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
-            <a href="https://www.facebook.com/alek.festekjian" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="https://twitter.com/afestekjian" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="https://www.linkedin.com/in/festekjian" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
-            <a href="mailto:festekj2@illinois.edu" target="_blank"><i class="fa fa-envelope fa-3x"></i></a>
-       -->
-           
             <a href="https://github.com/alekfestekjian" target="_blank"><img src="./media/github.svg" width="40" height="40"></a>
             <a href="https://www.facebook.com/alek.festekjian" target="_blank"><img src="./media/facebook.svg" width="40" height="40"></a>
             <a href="https://twitter.com/afestekjian" target="_blank"><img src="./media/twitter.svg" width="40" height="40"></a>
-            <a href="https://www.linkedin.com/in/festekjian" target="_blank"><img src="./media/linkedin.svg" width="40" height="40"></a>
+            <a href="https://www.linkedin.com/in/festekjian" target="_blank"><img src="./media/linkedin1.png" width="40" height="40"></a>
             <a href=mailto:festekj2@illinois.edu target="_blank"><img src="./media/gmail.svg" width="40" height="40"></a>
         </div>
       </footer>
