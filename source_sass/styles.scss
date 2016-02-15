@@ -94,7 +94,9 @@ header{
 	background-attachment: fixed;
 	h1{
 		font-size: 5rem;
-		font-family: $font-name;
+		font-family: 'Pacifico', cursive;
+		//font-family: $font-name;
+		padding-bottom: 20px;
 		display: block;
 		margin: 0 auto;
 	}
@@ -114,12 +116,16 @@ header{
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 2em;
+		font-family: Copperplate, sans-serif;
+
 
 	}
 }
 footer{
+
 	// Use mixin
-	background-color: $gray;
+	background: $darker-gray;
+	// background-color: $gray
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -151,18 +157,28 @@ footer{
 	/*
 	CHANG TO MIXINS
 	*/
-   	background-color: $gray;
+	font-family: Copperplate, sans-serif;
+   	background-color: $dark-gray;
    	width: 100%;
    	@include columns(3);
    	text-align: center;
    	p{
    		text-align: center;
+   		font-size: 1em;
    	}
 	h1{
+		font-family: Copperplate, sans-serif;
+		//font-family: $font-name;
 		font-weight: bold;
 		text-align: center;
+		font-size: 1.5em;
 	}
 	background-color: $white-gray;
+	.text-content{
+		padding-left: 8%;
+		padding-right: 8%;
+		padding-top: 2%;
+	}
 
 }
 .Education{
@@ -172,9 +188,22 @@ footer{
 .Experience{
 	width: 100%;
 	background-color: $light-blue;
+	.title{
+		text-align: center;
+		font-family: $font-header;
+		font-weight: bold;
+		font-size: 2em;
+		padding-top: 10px;
+	}
 }
 .Books{
-
+	#Title{
+		text-align: center;
+		font-family: $font-header;
+		font-weight: bold;
+		font-size: 2em;
+		padding-top: 10px;
+	}
 	width: 100%;
 	background-color: $white-gray;
 	.Top3{
@@ -191,19 +220,24 @@ footer{
 	}
 }
 .video{
-	h1{
-		font-weight: bold;
-	}
+	background-color: $light-blue;
 	width: 100%;
-	text-align: center;
 	source{
 		width: 100%;
 	}
 }
+.Book1,.Book2,.Book3{
+	img{
+		border-radius: 25px;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+	}
+	
+}
 .multi-column-footer{
 	width: 100%;
 	display: table;
-	background-color: $light-gray;
  	a{
  		&:hover{
  			@include scale(1.3);
@@ -221,6 +255,7 @@ footer{
 
 }
 .books{
+
 	text-align: center;
 	font-weight: bold;
 	position: fixed;
@@ -277,52 +312,113 @@ footer{
 	text-align: center;
 }
 .carousel {
-  font-family: $font-primary;
-  font-size: 14px;
+  //font-family: $font-primary;
+  //font-size: 14px;
   width: 100%;
   position: relative;
   //background-color: $gray;
   //margin: 1em;
   //box-shadow: 2px 2px 10px #ccc;
   overflow: hidden;
+  button{
+  	 border: none;
+  	 display: none;
+  }
 }
 .content {
-  margin: 0;
-  padding: 0;
-}
-.content li {
-  font-family: $font-secondary;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  text-align: center;
-}
-.active {
-  height: 130px;
-}
-.active li {
-  position: absolute;
-  top: 200px;
-}
-.active li.current {
+	margin: 0;
+	padding: 0;
+	li{
+		h1{
+	  		font-family: $font-header;
+	  		font-size: 2em;
 
-  top: 30px;
+	  	}
+	  	h2{
+	  		font-family: $font-header;
+	  		font-size: 1.5em;
+	  	}
+
+	  	p{
+	  		font-family: $font-header;
+	  		font-size: 1em;
+	  	}
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		list-style: none;
+		text-align: center;
+  }
 }
-.active .buttons {
-  //background: $darker-gray;
-  text-align: center;
-  //z-index: 10;
-  position: relative;
+// .content li {
+//   font-family: $font-secondary;
+//   font-size: 20px;
+//   margin: 0;
+//   padding: 0;
+//   width: 100%;
+//   list-style: none;
+//   text-align: center;
+// }
+
+// .content {
+//   margin: 0;
+//   padding: 0;
+// }
+// .content li {
+//   font-family: $font-secondary;
+//   font-size: 20px;
+//   margin: 0;
+//   padding: 0;
+//   width: 100%;
+//   list-style: none;
+//   text-align: center;
+// }
+// .active {
+//   height: 130px;
+
+// }
+// .active li {
+//   position: absolute;
+//   top: 200px;
+// }
+// .active li.current {
+
+//   top: 30px;
+// }
+.active {
+  height: 200px;
+  li{
+  	position: absolute;
+  	top: 200px;
+  }
+  li.current{
+  	top: 30px;
+  }
+  .buttons{
+	  //background: $darker-gray;
+	  text-align: center;
+	  //z-index: 10;
+	  position: relative;
+  }
+  button{
+  	display: block;
+  }
 }
-.carousel button {
-  border: none;
-  display: none;
-}
-.active button {
-  display: block;
-} 
+
+
+// .active .buttons {
+//   //background: $darker-gray;
+//   text-align: center;
+//   //z-index: 10;
+//   position: relative;
+// }
+// .carousel button {
+//   border: none;
+//   display: none;
+// }
+// .active button {
+//   display: block;
+// } 
 .prev{
   background-color: $light-blue;
   // border-top-left-radius: 10px 5px;

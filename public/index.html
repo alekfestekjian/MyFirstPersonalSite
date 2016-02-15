@@ -7,6 +7,7 @@
   <link rel="icon" type="image/ico" href="./media/favicon.ico?">
   <!-- Testing out this font -->
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <!-- Allowed? -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -22,7 +23,7 @@
             <li class="scrollmove"><a id = "MotivationalVideo_button" href="#MotivationalVideo">Motivational Video</a></li>
             <li class="scrollmove"><a id = "FavoriteBooks_button" href="#FavoriteBooks">Books</a></li>
             <li class="scrollmove"><a id = "Experience_button" href="#Experience">Experience</a></li>
-            <li class="scrollmove"><a id = "Education_button" href="#Education">Education</a></li>
+            <!-- <li class="scrollmove"><a id = "Education_button" href="#Education">Education</a></li> -->
             <li class="scrollmove"><a id = "AboutMe_button" href="#AboutMe">About me</a></li> 
           </div>
         </ul>
@@ -46,28 +47,33 @@
         <!-- <div class="column"> -->
         <div class="text-content">
           <h1>About Me</h1>
+          <br>
           <p> My name is Alek Festekjian and I am currently a Junior in Computer Science at the University of Illinois Urbana-Champaign. Check out my <a href="Resume.pdf">Resume!</a></p> 
         </div>
         <br>
+        <br>
         <div class="text-content">
           <h1>Programming Languages</h1>
+          <br>
           <p><strong>Proficient</strong> in C, C++, Java, Kafka</p>
-          <p><strong>Experience</strong> with Python, R, Javascript, jQuery, Git, HTML5/CSS,MIPS</p>
+          <p><strong>Experience</strong> with Python, R, NLTK, Numpy, Scikit, Javascript, jQuery, Git, HTML5/CSS,MIPS</p>
         </div>
         <br>
         <div class="text-content">
           <h1>Hobbies</h1>
+          <br>
           <p>When I am not coding or studying I love to a variety of activities. I read tons of books, I go rock climbing, I love working out and playing sports such as Skiing, Basketball, Soccer and Football!</p> 
         </div>
         <!-- </div> -->
       </section>
 
-
+<!-- 
       <section id = "Education" class = "Education">
         <div class="text-content">
-          <h1>Undergraduate</h1>
+          <h1>B.S in Computer Science at University of Illinois</h1>
+          <h2>Some cool classes I've taken</h2>
         </div>
-      </section>
+      </section> -->
 
 
       <!-- /**https://www.christianheilmann.com/2015/04/08/keeping-it-simple-coding-a-carousel/*/ -->
@@ -87,24 +93,31 @@
           <ol class="content">
             <li>
               <h1>University of Illinois</h1>
+              <br>
               <h2>Systems Programming TA</h2>
+              <br>
               <p>Conduct weekly office hours to aid students in debugging and understanding machine problems</p>
-              <p> Helping build and maintain an auto grading framework to automatically grade assignments for over 200 students, involves writing unit tests to grade students</p>
+              <br>
+              <p> Helping build and maintain an auto grading framework to automatically grade assignments for over 200 students</p>
             </li>
+            <br>
             <li>
               <h1>IBM</h1>
+              <br>
               <h2>SmartCloud Notes Intern</h2>
-               <p>Leveraged Kafka, an open-source message broker, to develop a Proof of Concept distributed queue processing system to improve processing speed and reliability for user provisioning and company directory synchronization for a cloud based messaging system</p>
+              <br>
+              <p>Leveraged Kafka, an open-source message broker, to develop a Proof of Concept distributed queue processing system <br>to improve processing speed and reliability for user provisioning and company directory synchronization<br> for a cloud based messaging system</p>
+              <br>
               <p>Proof of Concept project led to the creation of a new long-term development project.</p>
             </li>
-              
+            <br>
             <li>
               <h1>Wolters Kluwer Financial Services</h1>
+              <br>
               <h2>Software Product Intern</h2> 
-              <p>Worked collaboratively to create a Proof of Concept for a new product utilizing multiple technologies such as Microsoft SQL, Spring Restful Services, HTML, and JavaScript</p>
-              <p>Proof of Concept resulted in the development of a new project plan to integrate enhancement into the current product structure which is anticipated to improve client satisfaction</p>
-
-              </p>
+              <br>
+              <p>Worked collaboratively to create a Proof of Concept for a new product <br>utilizing multiple technologies such as <br>Microsoft SQL, Spring Restful Services, HTML, and JavaScript</p>
+              <br>
             </li>
           </ol>
         </div>
@@ -114,6 +127,9 @@
       <!-- MODAL SECTION -->
 <!--       http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ --> 
       <section id = "FavoriteBooks" class = "Books">
+        <div id="Title">
+          <h1>Some of my favorite books. Click a book to get a quick summary!</h1>
+        </div>
         <div class="Top3">
           <div class = "Links">
             <a href="#MasteryModal" class="Book1"><img src="./media/mastery.jpg"></a>
@@ -153,7 +169,7 @@
 
       <section id = "MotivationalVideo" class = "video">
         <div class="text-content">
-            <video poster="./media/money.png"width="100%" height="100%" controls>
+            <video poster="./media/amazing-view.jpg" width="100%" height="100%" controls>
               <source src="./media/noObject.mp4" type="video/mp4" class="cover" >
                 Your browser does not support this video.
             </video>
@@ -162,9 +178,9 @@
 
       <footer class="multi-column-footer">
         <div class="connect" id="connect">
-            <a href="https://github.com/alekfestekjian" target="_blank"><img src="./media/github.svg" width="40" height="40"></a>
+            <a href="https://www.github.com/alekfestekjian" target="_blank"><img src="./media/github.svg" width="40" height="40"></a>
             <a href="https://www.facebook.com/alek.festekjian" target="_blank"><img src="./media/facebook.svg" width="40" height="40"></a>
-            <a href="https://twitter.com/afestekjian" target="_blank"><img src="./media/twitter.svg" width="40" height="40"></a>
+            <a href="https://www.twitter.com/afestekjian" target="_blank"><img src="./media/twitter.svg" width="40" height="40"></a>
             <a href="https://www.linkedin.com/in/festekjian" target="_blank"><img src="./media/linkedin1.png" width="40" height="40"></a>
             <a href=mailto:festekj2@illinois.edu target="_blank"><img src="./media/gmail.svg" width="40" height="40"></a>
         </div>
