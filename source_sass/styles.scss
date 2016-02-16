@@ -95,7 +95,7 @@ header{
 	padding-top: 20px;
 	h1{
 		font-size: 5rem;
-		font-family: 'Pacifico', cursive;
+		font-family: $font-title;
 		//font-family: $font-name;
 		padding-bottom: 20px;
 		display: block;
@@ -159,7 +159,7 @@ footer{
 	/*
 	CHANG TO MIXINS
 	*/
-	font-family: Copperplate, sans-serif;
+	font-family: $font-header;
    	background-color: $dark-gray;
    	width: 100%;
    	@include columns(3);
@@ -169,7 +169,7 @@ footer{
    		font-size: 1em;
    	}
 	h1{
-		font-family: Copperplate, sans-serif;
+		font-family: $font-header;
 		//font-family: $font-name;
 		font-weight: bold;
 		text-align: center;
@@ -259,9 +259,9 @@ footer{
 .books{
 
 	text-align: center;
-	font-weight: bold;
+	//font-weight: bold;
 	position: fixed;
-	font-family: $font-primary;
+	font-family: $font-header;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -276,13 +276,16 @@ footer{
 		pointer-events: auto;
 	}
 	& > div{
+		h1{
+			font-size: 2em;
+		}
 		width: 400px;
 		position: relative;
 		margin: 10% auto;
 		padding: 5px 20px 13px 20px;
 		border-radius: 10px;
-		background-color: #fff;
-		@include gradient(#fff,#999);
+		background-color: $dark-blue;
+		@include gradient($dark-blue,#999);
 		
 	}
 }
@@ -302,7 +305,7 @@ footer{
 	@include radius(12px);
 	@include box-shadow(1px 1px 3px #000);
 	&:hover{
-		background: #00d9ff;
+		background: $blue;
 	}	
 }
 /*CAROUSEL CSS*/
