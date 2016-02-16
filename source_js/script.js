@@ -50,7 +50,7 @@ function onScreen() {
         var windowScroll = $(document).scrollTop();
         var navHeight = $('.nav-bar').height();
   
-        if( windowScroll + navHeight >= $(this).offset().top && windowScroll + navHeight < $(this).offset().top + $(this).height()) {
+        if( windowScroll + navHeight >= $(this).offset().top && windowScroll + navHeight <=$(this).offset().top + $(this).height()) {
             $('.nav-bar ul a#' + $(this).attr('id')+'_button').addClass('highlight');
         } else {
             $('.nav-bar ul a#' + $(this).attr('id')+'_button').removeClass('highlight');
